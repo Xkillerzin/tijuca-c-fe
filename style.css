@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #fefaf6;
+    color: #333;
+  }
+  
+  header {
+    background: #4e342e;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #c8a97e;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348') no-repeat center/cover;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #c8a97e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #a67c52;
+  }
+  
+  .destaques {
+    padding: 4rem 2rem;
+    background: #fff3e0;
+    text-align: center;
+  }
+  
+  .destaques h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    background: #4e342e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
