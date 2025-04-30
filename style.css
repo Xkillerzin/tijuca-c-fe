@@ -1,102 +1,172 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  body {
-    background: #fefaf6;
-    color: #333;
-  }
-  
-  header {
-    background: #4e342e;
-    color: #fff;
-    padding: 1rem 2rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f1eb;
+  color: #3e2c1c;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: #5d3a1a;
+  color: #fff8f0;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff8f0;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 1.1rem;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.ativo {
+  background-color: #7a5230;
+}
+
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('cafe.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff8f0;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.hero .btn {
+  background-color: #d1a075;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #bb865f;
+}
+
+
+.destaques {
+  padding: 60px 30px;
+  background-color: #fff8f0;
+  text-align: center;
+}
+
+.destaques h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: #5d3a1a;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e0d2c0;
+  padding: 25px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #5d3a1a;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.card p {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #3e2c1c;
+}
+
+.card span {
+  color: #7a5230;
+  font-size: 0.95rem;
+}
+
+
+footer {
+  background-color: #5d3a1a;
+  color: #fff8f0;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.95rem;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cards {
+    flex-direction: column;
     align-items: center;
   }
-  
-  .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #c8a97e;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 5rem 2rem;
-    background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348') no-repeat center/cover;
-    color: white;
-  }
-  
+
   .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
   }
-  
+
   .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
   }
-  
-  .btn {
-    padding: 0.8rem 1.5rem;
-    background-color: #c8a97e;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s;
+
+  .hero .btn {
+    padding: 12px 20px;
   }
-  
-  .btn:hover {
-    background-color: #a67c52;
-  }
-  
-  .destaques {
-    padding: 4rem 2rem;
-    background: #fff3e0;
-    text-align: center;
-  }
-  
-  .destaques h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .cards {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
+
   .card {
-    background: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
   }
-  
-  footer {
-    background: #4e342e;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
+}
